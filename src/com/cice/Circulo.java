@@ -1,3 +1,5 @@
+package com.cice;
+
 import static java.lang.Math.*;
 
 public class Circulo {
@@ -10,9 +12,11 @@ public class Circulo {
 
 
 
-    public Circulo(double rad){
+    public Circulo(double radio){
 
-        radio=rad;
+        this.radio=radio;
+        this.area=Math.PI*radio*radio;
+        this.perimetro=2*Math.PI*radio;
     }
 
     public double calculaArea(){
